@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" type="text/css" href="./style2.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="./javascript.js"></script>
 
 <html>
 
@@ -14,42 +15,18 @@
 	<div id="contenedor_login" class="card border-0 rounded-0">
 
 		<div id="login">	
-				<p style="font-size: 16px;" >Introduce tu usuario para continuar</p>
-				<input style="margin: 10px;" type="text" name="name" placeholder="Name" id="usuario" class="form-control">
-			 	<input style="margin: 10px;" type="password" name="password" placeholder="Password" id="contraseña" class="form-control">
+				<p style="font-size: 16px;text-align: center;" >Introduce tu usuario para continuar</p>
+				<input style="margin: 10px;" type="text" name="name" placeholder="Usuario" id="usuario" class="form-control">
+			 	<input style="margin: 10px;" type="password" name="password" placeholder="Contraseña" id="contraseña" class="form-control">
 			 	<div style="margin: auto; width: max-content;">
-			 		<button  style="border: 1px solid #ced4da;background-color: #8CA;" id='validar' onclick="validarUsuario()" class="btn btn-default">Validar!</button>
+			 		<button  style="border: 1px solid #ced4da;background-color: #8CA;" id='validar' onclick="validarUsuario()" class="btn btn-default">Acceder</button>
 			 	</div>
 
 
 			<h2 id="result"></h2>
 		</div>
-			
-
 	</div>
 
 </body>
-
-
-
-<script type="text/javascript">
-
-	function validarUsuario() {
-		var user = document.getElementById("usuario").value;
-		var pass = document.getElementById("contraseña").value;
-		// var user = $("#usuario").val();
-		// var pass = $("#contraseña").val();
-		if(user == "juan" && pass == "pepe"){
-			document.getElementById("result").innerHTML= "Correcto";
-			redireccion();
-		}
-		else{
-			document.getElementById("result").innerHTML= "Incorrecto";
-		}
-	}
-	function redireccion(){
-		window.location.href = "./index.html";
-	}
-</script>
 
 </html>
