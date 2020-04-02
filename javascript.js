@@ -7,11 +7,13 @@ function validarUsuario() {
 	// var pass = $("#contraseña").val();
 	if(user == "juan" && pass == ""){
 		document.getElementById("result").innerHTML= "Correcto";
+		document.getElementById("result").className = "alert-primary";
 		document.getElementById("principal").style.display = "block";
-		document.getElementsByClassName("contenedor_login").style.display = "none";
+		document.getElementById("seccion_login").style.display = "none";
 	}
 	else{
 		document.getElementById("result").innerHTML= "Incorrecto";
+		document.getElementById("result").style.display = "block";
 	}
 }
 
