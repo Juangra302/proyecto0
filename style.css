@@ -16,13 +16,14 @@
 
 }
 
-#contenedor_login{
+.contenedor_login{
   background-image: url("./fondo_login.jpg");
   background-attachment: fixed; /* El fondo permanecerá fijo */
   margin: 0 auto;
   height: 100vh;
 }
 
+  /*PRINCIPAL*/
 .navegador li {
   display:inline;
 }

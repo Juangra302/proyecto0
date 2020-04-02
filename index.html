@@ -1,9 +1,8 @@
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-
-<link rel="stylesheet" type="text/css" href="C:\Users\Juanito\Desktop\project0\style.css">
-
-<link rel="stylesheet" type="text/css" href="C:\Users\Juanito\Desktop\project0\style2.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href=".\style.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src=".\javascript.js"></script>
 
 <!DOCTYPE html>
 <html>
@@ -14,64 +13,83 @@
 
     <body>
 
-<!-- BARRA DE NAVEGACION -->
+  <!-- LOGIN -->
+    <section>
+      <div class="card border-0 rounded-0 contenedor_login">
+        <div id="login">  
+            <p style="font-size: 16px;text-align: center;" >Introduce tu usuario para continuar</p>
+            <input style="margin: 10px;" type="text" name="name" placeholder="Usuario" id="usuario" class="form-control">
+            <input style="margin: 10px;" type="password" name="password" placeholder="Contraseña" id="contraseña" class="form-control">
+            <div style="margin: auto; width: max-content;">
+              <button  style="border: 1px solid #ced4da;background-color: #8CA;" id='validar' onclick="validarUsuario()" class="btn btn-default">Acceder</button>
+            </div>
+        <h2 style="text-align: center;"  id="result"></h2>
+        </div>
+      </div>
+    </section>
 
-<div class="header">
+  <!-- CUERPO PRINCIPAL -->
+    <section style="display: none" id="principal" >
+        <div class="card border-0 rounded-0 contenedor_login">
+            <div class="header">
 
-</div>
+            </div>
 
-<div class="navegador">
-  <ul>
-    <li><a href="#">α Alfa</a></li>
-    <li><a href="#">β Beta</a></li>
-    <li><a href="#">γ Gamma</a></li>
-    <li><a href="#">δ Delta</a></li>
-    <li><a href="#">ε Epsilon</a></li>
-  </ul>
-</div>
+            <!-- BARRA DE NAVEGACION -->
+            <div class="navegador">
+              <ul>
+                <li><a href="#">α Alfa</a></li>
+                <li><a href="#">β Beta</a></li>
+                <li><a href="#">γ Gamma</a></li>
+                <li><a href="#">δ Delta</a></li>
+                <li><a href="#">ε Epsilon</a></li>
+              </ul>
+            </div>
 
-<div class="section">
+            <div class="section">
 
-</div>
+            </div>
 
+            <div class="top-bar">
+              <div class="top-bar-title">
+                <img src="https://image.freepik.com/iconos-gratis/logotipo-de-la-manzana_318-40184.jpg" alt="imagen" />
+              </div>
+               
+            <div class="nagegacion">
+              <ul class="menu menu-navegacion">
+                <li>
+                  <a href="#" class="item-1">hey
+                   <span class="fa fa-cogs"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-2" >hey
+                   <span class="fa fa-diamond"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-3">hey
+                   <span class="fa fa-futbol-o"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-4" >hey
+                   <span class="fa fa-heart"></span>
+                  </a>
+                </li>
+              </ul>
+              
+             </div>
+            </div>  
+        </div> 
+    </section>
 
-<!-- PIE DE PAGINA -->
+    <!-- PIE DE PAGINA -->
+    <section>
+      <div class="footer">
 
-<div class="footer">
+      </div>
+    </section>
 
-</div>
-
-<div class="top-bar">
-  <div class="top-bar-title">
-    <img src="https://image.freepik.com/iconos-gratis/logotipo-de-la-manzana_318-40184.jpg" alt="imagen" />
-  </div>
-   
-<div class="nagegacion">
-  <ul class="menu menu-navegacion">
-    <li>
-      <a href="#" class="item-1">hey
-       <span class="fa fa-cogs"></span>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="item-2" >hey
-       <span class="fa fa-diamond"></span>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="item-3">hey
-       <span class="fa fa-futbol-o"></span>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="item-4" >hey
-       <span class="fa fa-heart"></span>
-      </a>
-    </li>
-  </ul>
-  
- </div>
-</div>  
-
-    </body>
+      </body>
 </html>
